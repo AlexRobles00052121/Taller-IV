@@ -1,0 +1,42 @@
+site_name: Taller IV - Documentación
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - content.tabs
+  palette:
+    primary: indigo
+    accent: amber
+
+nav:
+  - Inicio: index.md
+  - "Guía de Uso 🚀":
+      - Introducción: guia-uso/introduccion.md
+      - Autenticación: guia-uso/autenticacion.md
+      - Endpoints: guia-uso/endpoints.md
+      - Ejemplos de Uso: guia-uso/uso.md
+  - "Recursos 📚":
+      - Preguntas Frecuentes: recursos/preguntas-frecuentes.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.tasklist
+  - toc:
+      permalink: true
